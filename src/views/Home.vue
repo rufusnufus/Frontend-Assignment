@@ -18,8 +18,6 @@
 
 <script>
 
-const url = "https://api.exchangeratesapi.io/latest";
-
 export default {
   name: "Home",
   data(){
@@ -48,7 +46,7 @@ export default {
   },
   methods: {
     getData : async(vm) => {
-      const response = await fetch(url);
+      const response = await fetch(process.env.VUE_APP_API_URL);
       if(!response.ok) return;
       const json = await response.json();
       vm.loading = false;
