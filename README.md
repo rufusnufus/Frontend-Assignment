@@ -9,7 +9,7 @@ Test task for O.Dev company.
 ```bash
 docker-compose up --build
 ```
-This command create image for this project and starts the application on [http://localhost/8080/](http://localhost/8080/)
+This command creates an image for this project and starts the application on [http://localhost:8080/](http://localhost:8080/)
 
 ## Support
 Write to @rufusnufus via Telegram if you have any questions.
